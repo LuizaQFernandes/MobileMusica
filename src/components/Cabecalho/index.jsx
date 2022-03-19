@@ -9,7 +9,7 @@ export function Cabecalho(){
     return(
         <View style={styles.container}>
             <Feather
-                name="arrow-left"
+                name="music"
                 color={theme.colors.blue}
                 size={32} />
             

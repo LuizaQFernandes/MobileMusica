@@ -1,9 +1,12 @@
 export const theme = {
     colors: {
         purple: '#655D8A',
-        blue: '#7897AB',
+        blue: '#6974AF',
         pink: '#D885A3',
-        beige: '#FFF4EF'
+        beige: '#FFF4EF',
+        gray: '#D1D1D1',
+        black:'#070707',
+        white: '#FFFFFF'
     },
     fonts: {
         primary400: 'Roboto_400Regular',

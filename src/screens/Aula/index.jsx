@@ -3,15 +3,17 @@ import {View, Text} from 'react-native';
 import { styles } from './styles';
 import { Cabecalho } from '../../components/Cabecalho';
 import { Rodape } from '../../components/Rodape';
-import { Pauta } from '../../components/Pauta'
-
+import { ImagemInicial } from '../../components/ImagemInicial'
+import { Botao } from '../../components/Botao'
 
 export function Aula(){
     return (
         <View style={styles.container}>
             <Cabecalho/>
 
-                <Pauta/>
+                <ImagemInicial/>
+                <Botao/>
+                
             <Rodape/>
         </View>
     )

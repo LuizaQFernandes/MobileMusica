@@ -3,9 +3,11 @@ import { Image } from 'react-native';
 import {MotiImage} from 'moti'
 import { styles } from './styles';
 import fotoMusica from '../../../assets/Music.png';
+import { Botao } from '../Botao';
 
-export function Pauta() {
+export function ImagemInicial() {
   return (
+
     <MotiImage
       style={styles.musica}
       source={fotoMusica}
@@ -22,6 +24,8 @@ export function Pauta() {
         type: 'spring',
         
       }}
+
+
     />
   );
 }
