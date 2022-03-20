@@ -11,8 +11,37 @@ import { theme } from '../../styles/theme';
 export function Aula(){
     const [comecar, setComecar] = useState(null);
 
-    if(comecar === null){
+    if(comecar !== null){
+
         return (
+            <View style={styles.container}>
+                <Cabecalho/>
+
+                    <Piano/>
+
+                    <TouchableOpacity 
+
+                        style={styles.botao}   
+                        onPress={() => setComecar(comecar === null)}> 
+
+                        <Text style={styles.textoBotao}>  
+                            Voltar
+                        </Text>
+
+                        <Feather
+                            name="arrow-left"
+                            size={24}
+                            color={theme.colors.beige}
+                        />
+                
+                    </TouchableOpacity>           
+
+            </View>
+        )
+        
+    }
+    else{
+        return(
             <View style={styles.container} >
                 <Cabecalho/>
 
@@ -35,17 +64,6 @@ export function Aula(){
                 
                     </TouchableOpacity> 
  
-                <Rodape/>
-            </View>
-        )
-    }
-    else{
-        return (
-            <View style={styles.container}>
-                <Cabecalho/>
-
-                    <Piano/>
-                    
                 <Rodape/>
             </View>
         )
