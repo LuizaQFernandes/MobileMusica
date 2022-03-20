@@ -1,9 +1,7 @@
 import React from 'react';
-import { Image } from 'react-native';
 import {MotiImage} from 'moti'
 import { styles } from './styles';
 import fotoMusica from '../../../assets/Music.png';
-import { Botao } from '../Botao';
 
 export function ImagemInicial() {
   return (
