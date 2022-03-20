@@ -16,7 +16,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         alignSelf: 'center',
-     
       },
       textoBotao: {
         color: theme.colors.beige,

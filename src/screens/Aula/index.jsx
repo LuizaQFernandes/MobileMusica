@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, Pressable} from 'react-native';
+import {View, Text, Pressable, TouchableOpacity} from 'react-native';
 import { styles } from './styles';
 import { Cabecalho } from '../../components/Cabecalho';
 import { Rodape } from '../../components/Rodape';
@@ -18,7 +18,7 @@ export function Aula(){
 
                     <ImagemInicial/>
    
-                    <Pressable 
+                    <TouchableOpacity 
 
                         style={styles.botao}   
                         onPress={() => setComecar(comecar === true)}> 
@@ -33,7 +33,7 @@ export function Aula(){
                             color={theme.colors.beige}
                         />
                 
-                    </Pressable> 
+                    </TouchableOpacity> 
  
                 <Rodape/>
             </View>
