@@ -6,7 +6,7 @@ export const theme = {
         beige: '#FFF4EF',
         gray: '#D1D1D1',
         black:'#070707',
-        white: '#FFFFFF'
+        white: '#FFFFFF',
     },
     fonts: {
         primary400: 'Roboto_400Regular',
