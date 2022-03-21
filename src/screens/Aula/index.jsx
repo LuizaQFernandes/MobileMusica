@@ -9,9 +9,10 @@ import {Piano} from '../../components/Piano'
 import { theme } from '../../styles/theme';
 
 export function Aula(){
-    const [comecar, setComecar] = useState(null);
+    
+    const [comecar, setComecar] = useState(true);
 
-    if(comecar !== null){
+    if(comecar){
 
         return (
             <View style={styles.container}>
@@ -20,7 +21,7 @@ export function Aula(){
                     <TouchableOpacity 
 
                         style={styles.botao}   
-                        onPress={() => setComecar(comecar === null)}> 
+                        onPress={() => setComecar( false )}> 
 
                         <Text style={styles.textoBotao}>Voltar</Text>
 
@@ -29,8 +30,10 @@ export function Aula(){
                             size={24}
                             color={theme.colors.beige}
                         />
-                    </TouchableOpacity>           
+                    </TouchableOpacity>     
+                    <Rodape/>      
             </View>
+            
         )
     }
     else{
@@ -41,7 +44,7 @@ export function Aula(){
                     <TouchableOpacity 
 
                         style={styles.botao}   
-                        onPress={() => setComecar(comecar === true)}> 
+                        onPress={() => setComecar(true)}> 
 
                         <Text style={styles.textoBotao}>Começar</Text>
 
