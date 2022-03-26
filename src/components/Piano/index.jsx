@@ -6,12 +6,12 @@ import { Audio } from 'expo-av';
 export function Piano(){
 
     {/*Constante Som*/}
-    const [sound, setSound] = React.useState();
+    const [sound, setSound] = useState();
 
     {/*Funções Assíncronas que tocam o som de cada nota*/}
 
     {/*Dó*/}
-    async function playSoundC() {
+    async function tocarNotaC() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_C.mp3')
@@ -22,7 +22,7 @@ export function Piano(){
     }
 
     {/*Dó#*/}
-    async function playSoundCs() {
+    async function tocarNotaCs() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_Cs.mp3')
@@ -33,7 +33,7 @@ export function Piano(){
     }
 
     {/*Ré*/}
-    async function playSoundD() {
+    async function tocarNotaD() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_D.mp3')
@@ -44,7 +44,7 @@ export function Piano(){
     }
 
     {/*Ré#*/}
-    async function playSoundDs() {
+    async function tocarNotaDs() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_Ds.mp3')
@@ -55,7 +55,7 @@ export function Piano(){
     }
 
     {/*Mi*/}
-    async function playSoundE() {
+    async function tocarNotaE() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_E.mp3')
@@ -66,7 +66,7 @@ export function Piano(){
     }
     
     {/*Fá*/}
-    async function playSoundF() {
+    async function tocarNotaF() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_F.mp3')
@@ -77,7 +77,7 @@ export function Piano(){
     }
 
     {/*Fá#*/}
-    async function playSoundFs() {
+    async function tocarNotaFs() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_Fs.mp3')
@@ -88,7 +88,7 @@ export function Piano(){
     }
 
     {/*Sol*/}
-    async function playSoundG() {
+    async function tocarNotaG() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_G.mp3')
@@ -99,7 +99,7 @@ export function Piano(){
     }
 
     {/*Sol#*/}
-    async function playSoundGs() {
+    async function tocarNotaGs() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_Gs.mp3')
@@ -110,7 +110,7 @@ export function Piano(){
     }
 
     {/*Lá*/}
-    async function playSoundA() {
+    async function tocarNotaA() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_A.mp3')
@@ -121,7 +121,7 @@ export function Piano(){
     }
 
     {/*Lá#*/}
-    async function playSoundAs() {
+    async function tocarNotaAs() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_As.mp3')
@@ -132,7 +132,7 @@ export function Piano(){
     }
 
     {/*Si*/}
-    async function playSoundB() {
+    async function tocarNotaB() {
         const { sound } = await Audio.Sound.createAsync
         (
             require('../../../audio/audio_B.mp3')
@@ -163,7 +163,7 @@ export function Piano(){
               </View>
 
                 {/*Superior Dó# */}
-              <TouchableOpacity onPress={playSoundCs}
+              <TouchableOpacity onPress={tocarNotaCs}
                 style={{ backgroundColor: "black", height: 100, width: 32, borderTopWidth: 1, borderLeftWidth: 1,}} >
                 <Text style={styles.notasParteSuperior}>Dó#</Text>
               </TouchableOpacity>
@@ -174,7 +174,7 @@ export function Piano(){
               </View >
 
                 {/*Superior Ré# */}
-              <TouchableOpacity onPress={playSoundDs}
+              <TouchableOpacity onPress={tocarNotaDs}
                 style={{ backgroundColor: "black", height: 100, width: 32, borderTopWidth: 1, borderLeftWidth: 1,}} >
                 <Text style={styles.notasParteSuperior}>Ré#</Text>
               </TouchableOpacity >
@@ -190,7 +190,7 @@ export function Piano(){
               </View >
 
                 {/*Superior Fá# */}
-              <TouchableOpacity onPress={playSoundFs}
+              <TouchableOpacity onPress={tocarNotaFs}
                 style={{ backgroundColor: "black", height: 100, width: 32, borderTopWidth: 1, }} >
                 <Text style={styles.notasParteSuperior}>Fá#</Text>
               </TouchableOpacity >
@@ -201,7 +201,7 @@ export function Piano(){
               </View >
 
                 {/*Superior Sol# */}
-              <TouchableOpacity onPress={playSoundGs}
+              <TouchableOpacity onPress={tocarNotaGs}
                 style={{ backgroundColor: "black", height: 100, width: 32, borderTopWidth: 1, }} >
                 <Text style={styles.notasParteSuperior}>Sol#</Text>
               </TouchableOpacity >
@@ -212,7 +212,7 @@ export function Piano(){
               </View >
 
                 {/*Superior Lá# */}
-              <TouchableOpacity onPress={playSoundAs}
+              <TouchableOpacity onPress={tocarNotaAs}
                 style={{ backgroundColor: "black", height: 100, width: 32, borderTopWidth: 1, }} >
                 <Text style={styles.notasParteSuperior}>Lá#</Text>
               </TouchableOpacity >
@@ -228,43 +228,43 @@ export function Piano(){
             <View style={{ flexDirection : "row", alignItems: "center", justifyContent: "center" }}>
   
                 {/*Dó*/}
-              <TouchableOpacity onPress={playSoundC}
+              <TouchableOpacity onPress={tocarNotaC}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                     <Text style={styles.notasParteInferior}>Dó</Text>
               </TouchableOpacity >
               
                 {/*Ré*/}
-              <TouchableOpacity onPress={playSoundD}
+              <TouchableOpacity onPress={tocarNotaD}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Ré</Text>
               </TouchableOpacity >
 
                 {/*Mi*/}
-              <TouchableOpacity onPress={playSoundE}
+              <TouchableOpacity onPress={tocarNotaE}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Mi</Text>
               </TouchableOpacity >
 
                 {/*Fá*/}
-              <TouchableOpacity onPress={playSoundF}
+              <TouchableOpacity onPress={tocarNotaF}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Fá</Text>
               </TouchableOpacity >
 
                 {/*Sol*/}
-              <TouchableOpacity onPress={playSoundG}
+              <TouchableOpacity onPress={tocarNotaG}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Sol</Text>
               </TouchableOpacity >
 
                 {/*La*/}
-              <TouchableOpacity onPress={playSoundA}
+              <TouchableOpacity onPress={tocarNotaA}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Lá</Text>
               </TouchableOpacity >
 
                 {/*Si*/}
-              <TouchableOpacity onPress={playSoundB}
+              <TouchableOpacity onPress={tocarNotaB}
                 style={{ backgroundColor: "white", height: 100, width: 48, borderBottomWidth: 1, borderLeftWidth: 1, borderRightWidth: 1 }} >
                 <Text style={styles.notasParteInferior}>Si</Text>
               </TouchableOpacity >
