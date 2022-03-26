@@ -10,7 +10,7 @@ export function Rodape(){
                     App Aula de Música
                 </Text>
                 <Text style={styles.detalheAula}>
-                    Desenvolvido para a Disciplina de Tópicos Especiais em Informática
+                    Disciplina Tópicos Especiais em Informática
                 </Text>
             </View>
             <Text href={"https://storyset.com/music"} style={styles.referenciaAula}>
