@@ -10,7 +10,7 @@ import { theme } from '../../styles/theme';
 
 export function Aula(){
     
-    const [comecar, setComecar] = useState(true);
+    const [comecar, setComecar] = useState(false);
 
     if(comecar){
 
