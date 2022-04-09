@@ -5,4 +5,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     marginTop: -80
   },
+  container: {
+    flex: 1, 
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
 });
